@@ -31,3 +31,9 @@ let get_val e =
   match e.v with
   | None -> raise DListException
   | Some x -> x
+
+let append a b =
+  a.prev.next <- b.next;
+  b.next.prev <- a.prev;
+  a.prev <- b.prev;
+  b.prev.next <- a

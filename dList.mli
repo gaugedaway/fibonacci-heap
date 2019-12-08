@@ -6,3 +6,4 @@ val insert : 'a dlist -> 'a -> unit
 val remove : 'a dlist -> unit
 val foreach : 'a dlist -> ('a dlist -> unit) -> unit
 val get_val : 'a dlist -> 'a
+val append : 'a dlist -> 'a dlist -> unit
